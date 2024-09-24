@@ -64,7 +64,7 @@ const donationAmountMessage = document.getElementById('don-amount-message');
 function showModal(amount, source) {
     
     donationAmountMessage.innerHTML = `
-        <p>You have successfully donated <span class="font-bold text-green-600">${amount} Taka</span> to the <span class="font-bold">${source}</span> cause!</p>
+        <p>You have donated <span class="font-bold text-green-600">${amount} Taka</span> to the <span class="font-bold">${source}</span> cause!</p>
     `;
     modal.classList.remove('hidden'); // Show the modal
 }
