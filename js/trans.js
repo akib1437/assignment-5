@@ -1,21 +1,21 @@
 //Get Current balance
-const currBalEle = document.getElementById("cur-bal");
-let currBal = parseInt (currBalEle.textContent);
+const currentBalanceEle = document.getElementById("current-balance");
+let currentBalance = parseInt (currentBalanceEle.textContent);
 
 //update donation
-function upDon(inputId, balId, source)
+function upDon(inputId, balanceId, source)
 {
     const inputField =document.getElementById(inputId);
     const amount = parseInt (inputField.value) || 0;
 
-    if(amount>0 && amount <= currBal)
+    if(amount>0 && amount <= currentBalance)
     {
-        currBal -= amount;
-        currBalEle.textContent = currBal.toFixed(0);
+        currentBalance -= amount;
+        currentBalanceEle.textContent = currentBalance.toFixed(0);
 
-        const balELe = document.getElementById(balId);
-        const currBalVal = parseInt(balELe.textContent);
-        balELe.textContent = (currBalVal + amount).toFixed(0);
+        const balELe = document.getElementById(balanceId);
+        const currentBalanceVal = parseInt(balELe.textContent);
+        balELe.textContent = (currentBalanceVal + amount).toFixed(0);
 
         logDonation(amount, source);
 
@@ -36,11 +36,11 @@ function logDonation(amount, source)
     const transCon = document.getElementById("transaction-con");
     const date = new Date().toLocaleString("en-BD", { timezone: "Asia/Dhaka"});
 
-    const donMess = document.createElement("div");
-    donMess.classList.add('bg-base-100','shadow-lg', 'p-4', 'rounded', 'mb-4', 'font-bold');
-    donMess.textContent = `${amount} Taka is donated for famine-2024 at ${source} on ${date}`;
+    const donateMessage = document.createElement("div");
+    donateMessage.classList.add('bg-base-100','shadow-lg', 'p-4', 'rounded', 'mb-4', 'font-bold');
+    donateMessage.textContent = `${amount} Taka is donated for famine-2024 at ${source} on ${date}`;
 
-    transCon.appendChild(donMess);
+    transCon.appendChild(donateMessage);
 }
 
 //Button event listeners

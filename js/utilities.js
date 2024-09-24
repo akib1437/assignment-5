@@ -1,17 +1,17 @@
 //Update Donation
-function upDon(inputId, balId)
+function upDon(inputId, balanceId)
 {
     const inputField = document.getElementById(inputId);
     const amount = parseInt (inputField.value) || 0;
 
-    if (amount>0 && amount<= currBal)
+    if (amount>0 && amount<= currentBalance)
     {
-        currBal -= amount;
-        currBalEle.textContent =currBal.toFixed(0);
+        currentBalance -= amount;
+        currentBalanceEle.textContent =currentBalance.toFixed(0);
 
-        const balELe = document.getElementById(balId);
-        const currBalVal = parseInt(balELe.textContent);
-        balELe.textContent = (currBalEle + amount).toFixed(0);
+        const balELe = document.getElementById(balanceId);
+        const currentBalanceVal = parseInt(balELe.textContent);
+        balELe.textContent = (currentBalanceEle + amount).toFixed(0);
 
         inputField.value ='';
     }
