@@ -33,7 +33,7 @@ function upDon(inputId, balId, source)
 //Log donation
 function logDonation(amount, source)
 {
-    const transCon = document.getElementById("trans-con");
+    const transCon = document.getElementById("transaction-con");
     const date = new Date().toLocaleString("en-BD", { timezone: "Asia/Dhaka"});
 
     const donMess = document.createElement("div");
@@ -44,20 +44,20 @@ function logDonation(amount, source)
 }
 
 //Button event listeners
-document.getElementById("noa-don-btn").onclick = function(){
-    upDon("noa-input-don", "noa-bal", "Noakhali");
+document.getElementById("noakhali-donate-btn").onclick = function(){
+    upDon("noakhali-input-donate", "noakhali-balance", "Noakhali");
 };
-document.getElementById("feni-don-btn").onclick = function(){
-    upDon("feni-input-don", "feni-bal", "Feni");
+document.getElementById("feni-donate-btn").onclick = function(){
+    upDon("feni-input-donate", "feni-balance", "Feni");
 };
-document.getElementById("quota-don-btn").onclick = function(){
-    upDon("quota-input-don", "quota-bal", "Quota");
+document.getElementById("quota-donate-btn").onclick = function(){
+    upDon("quota-input-donate", "quota-balance", "Quota");
 };
 
 // ------------------------------------------
 
 
-const modal = document.getElementById('don-modal');
+const modal = document.getElementById('donate-modal');
 const closeModalBtn = document.getElementById('close-modal-btn');
 const donationAmountMessage = document.getElementById('don-amount-message');
 

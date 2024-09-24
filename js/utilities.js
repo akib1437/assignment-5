@@ -22,29 +22,29 @@ function upDon(inputId, balId)
 }
 
 //Button Event Listeners
-document.getElementById("noa-don-btn").onclick = function(){
-    upDon("noa-input-don", "noa-bal");
+document.getElementById("noakhali-donate-btn").onclick = function(){
+    upDon("noakhali-input-donate", "noakhali-balance");
 };
-document.getElementById("feni-don-btn").onclick = function(){
-    upDon("feni-input-don", "feni-bal");
+document.getElementById("feni-donate-btn").onclick = function(){
+    upDon("ate", "feni-balance");
 };
-document.getElementById("quota-don-btn").onclick = function(){
-    upDon("quota-input-don", "quota-bal");
+document.getElementById("quota-donate-btn").onclick = function(){
+    upDon("quota-input-donate", "quota-balance");
 };
 
 
 function showSectionById(id)
 {
-    document.getElementById ('don-form').classList.add('hidden');
-    document.getElementById ('trans-sec').classList.add('hidden');
+    document.getElementById ('donate-form').classList.add('hidden');
+    document.getElementById ('transaction-section').classList.add('hidden');
 
     document.getElementById(id).classList.remove('hidden'); 
 
 }
 
-document.getElementById('btn-show-don').addEventListener('click', function(){
-    showSectionById('don-form');
+document.getElementById('btn-show-donate').addEventListener('click', function(){
+    showSectionById('donate-form');
 })
-document.getElementById('btn-show-his').addEventListener('click', function(){
-    showSectionById('trans-sec');
+document.getElementById('btn-show-history').addEventListener('click', function(){
+    showSectionById('transaction-section');
 })

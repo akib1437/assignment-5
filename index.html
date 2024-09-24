@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-
-</html>
+<html lang="en" data-theme="light"></html>
 
 <head>
     <meta charset="UTF-8">
@@ -55,9 +53,9 @@
             <div class=" navbar ">
                 <div class="navbar-start">
                 </div>
-                <div class="navbar-center space-x-6 lg:flex">
-                    <a id="btn-show-don" class="btn bg-primary-btn font-extrabold">Donation</a>
-                    <a id="btn-show-his" class="btn font-extrabold">History</a>
+                <div class="navbar-center space-x-6 lg:flex lg:mt-5 lg:mb-5">
+                    <a id="btn-show-donate" class="btn bg-primary-btn font-extrabold ">Donation</a>
+                    <a id="btn-show-history" class="btn font-extrabold">History</a>
                 </div>
                 <div class="navbar-end">
                 </div>
@@ -66,7 +64,7 @@
     </section>
 
     <!-- Donation Cards -->
-    <section id="don-form">
+    <section id="donate-form">
         <!-- Noakhali Card -->
         <div class="card text-center lg:card-side bg-base-100 max-w-lg rounded-lg shadow-md p-5 mx-auto flex flex-col md:min-w-max md:max-w-lg lg:flex-row lg:space-x-6">
             <figure>
@@ -75,7 +73,7 @@
             <div class="card-body">
                 <div class="flex flex-row items-center bg-gray-200 rounded-lg p-2 ml-11 md:w-1/5 w-3/5">
                     <img class="w-6 h-6 mr-2" src="./assets/coin.png" alt="">
-                    <h4 id="noa-bal" class="">300000</h4>
+                    <h4 id="noakhali-balance" class="">300000</h4>
                 </div>
                 <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p> The recent floods in Noakhali have caused significant damage to <br>
@@ -85,11 +83,11 @@
                     those in need.</p>
 
                 <div>
-                    <input id="noa-input-don" type="text" placeholder="Write donation amount"
+                    <input id="noakhali-input-donate" type="text" placeholder="Write donation amount"
                         class="input input-bordered w-full my-3">
                 </div>
                 <div class="card-actions justify-end">
-                    <button id="noa-don-btn" class="btn w-full  bg-primary-btn font-extrabold text-black">Donate
+                    <button id="noakhali-donate-btn" class="btn w-full  bg-primary-btn font-extrabold text-black">Donate
                         Now!</button>
                 </div>
             </div>
@@ -103,7 +101,7 @@
             <div class="card-body">
                 <div class="flex flex-row items-center bg-gray-200 rounded-lg p-2 ml-12 md:w-1/5 w-3/6">
                     <img class="w-6 h-6 mr-2" src="./assets/coin.png" alt="">
-                    <h4 id="feni-bal" class="">115000</h4>
+                    <h4 id="feni-balance" class="">115000</h4>
                 </div>
 
                 <h2 class="card-title">Donate for Flood Relief in Feni, Bangladesh</h2>
@@ -116,11 +114,11 @@
                 </p>
 
                 <div>
-                    <input id="feni-input-don" type="text" placeholder="Write donation amount"
+                    <input id="feni-input-donate" type="text" placeholder="Write donation amount"
                         class="input input-bordered w-full my-3">
                 </div>
                 <div class="card-actions justify-end">
-                    <button id="feni-don-btn" class="btn w-full  bg-primary-btn font-extrabold text-black">Donate
+                    <button id="feni-donate-btn" class="btn w-full  bg-primary-btn font-extrabold text-black">Donate
                         Now!</button>
                 </div>
             </div>
@@ -134,7 +132,7 @@
             <div class="card-body">
                 <div class="flex flex-row items-center bg-gray-200 rounded-lg p-2 md:w-1/5 ml-12 w-3/6 ">
                     <img class="w-6 h-6 mr-2" src="./assets/coin.png" alt="">
-                    <h4 id="quota-bal" class="">75000</h4>
+                    <h4 id="quota-balance" class="">75000</h4>
                 </div>
 
                 <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
@@ -148,11 +146,11 @@
                 </p>
 
                 <div>
-                    <input id="quota-input-don" type="text" placeholder="Write donation amount"
+                    <input id="quota-input-donate" type="text" placeholder="Write donation amount"
                         class="input input-bordered w-full my-3">
                 </div>
                 <div class="card-actions justify-end">
-                    <button id="quota-don-btn" class="btn w-full  bg-rimary-btn font-extrabold text-black">Donate
+                    <button id="quota-donate-btn" class="btn w-full  bg-primary-btn font-extrabold text-black">Donate
                         Now!</button>
                 </div>
             </div>
@@ -160,7 +158,7 @@
     </section>
 
     <!-- modal section -->
-    <section id="don-modal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <section id="donate-modal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg text-center w-1/2">
             <h2 class="text-2xl font-bold mb-4">Congrats!</h2>
             <div class="flex jus">
@@ -177,8 +175,8 @@
     <!-- History -->
     <section>
         <!-- Transaction start here  -->
-        <div id="trans-sec" class="hidden">
-            <div id="trans-con" class="text-center space-y-3 font-bold">
+        <div id="transaction-section" class="hidden">
+            <div id="transaction-con" class="text-center space-y-3 font-bold">
                 <h1>Transaction</h1>
             </div>
         </div>
