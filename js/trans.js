@@ -38,7 +38,7 @@ function logDonation(amount, source)
 
     const donateMessage = document.createElement("div");
     donateMessage.classList.add('bg-base-100','shadow-lg', 'p-4', 'rounded', 'mb-4', 'font-bold');
-    donateMessage.textContent = `${amount} Taka is donated for famine-2024 at ${source} on ${date}`;
+    donateMessage.textContent = `${amount} Taka is donated at ${source} on ${date}`;
 
     transCon.appendChild(donateMessage);
 }
