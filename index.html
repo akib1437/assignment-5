@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html data-theme="cupcake"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "Primary-Btn": 'rgb(180, 244, 97)',
+                        "Navbar-Background": 'rgb(249, 247, 243);',
+                    },
+                    backgroundImage: {
+
+                    },
+                    fontFamily: {
+                        lexend: ['Lexend', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Donate Bangladesh</title>
+</head>
+<body>
+    <header>
+    <!-- navbar -->
+    <div class="navbar bg-Navbar-Background pb-20 sticky top-0 z-50 transition backdrop-blur-mid">
+        <div class="navbar-start">
+            <a href="blog.html" class="btn font-extrabold ml-20 bg-Primary-Btn mt-10">Blog</a>
+        </div>
+        <div class="navbar-center lg:flex">
+            <img class="mt-10" src="assets/logo.png" alt="">
+            <h1 class="font-bold text-3xl mt-10 ml-3 text-black">Donate Bangladesh</h1>
+        </div>
+        <div class="navbar-end mr-20">
+            <img class="mt-10" src="assets/coin.png" alt="">
+            <h4 id="cur-bal" class="mt-10 ml-1 text-black">5500 BDT</h4>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-opacity-90');
+            } else {
+                navbar.classList.remove('bg-opacity-90');
+            }
+        });
+    </script>
+    <!-- donation and history -->
+    <section>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-center space-x-6 lg:flex">
+                <a id="btn-show-don" class="btn bg-Primary-Btn font-extrabold">Donation</a>
+                <a id="btn-show-his" class="btn font-extrabold">History</a>
+            </div>
+            <div class="navbar-end">
+            </div>
+        </div>
+    </section>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>
