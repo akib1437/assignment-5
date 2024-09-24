@@ -20,6 +20,9 @@ function upDon(inputId, balId, source)
         logDonation(amount, source);
 
         inputField.value ='';
+
+         // Show modal after successful donation
+         showModal(amount, source);
     }
     else
     {
@@ -50,3 +53,23 @@ document.getElementById("feni-don-btn").onclick = function(){
 document.getElementById("quota-don-btn").onclick = function(){
     upDon("quota-input-don", "quota-bal", "Quota");
 };
+
+// ------------------------------------------
+
+
+const modal = document.getElementById('don-modal');
+const closeModalBtn = document.getElementById('close-modal-btn');
+const donationAmountMessage = document.getElementById('don-amount-message');
+
+function showModal(amount, source) {
+    
+    donationAmountMessage.innerHTML = `
+        <p>You have successfully donated <span class="font-bold text-green-600">${amount} Taka</span> to the <span class="font-bold">${source}</span> cause!</p>
+    `;
+    modal.classList.remove('hidden'); // Show the modal
+}
+
+// Close modal on button click
+closeModalBtn.onclick = function() {
+    modal.classList.add('hidden');
+}
