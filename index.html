@@ -34,10 +34,10 @@
     <title>Donate Bangladesh</title>
 </head>
 
-<body>
+<body class="font-lexend">
     <header>
         <!-- navbar -->
-        <div class="navbar bg-Navbar-Background pb-20 sticky top-0 z-50 transition backdrop-blur-mid">
+        <div class="navbar bg-Navbar-Background pb-20 sticky top-0 z-50 flex flex-col md:flex-row items-center justify-between px-4">
             <div class="navbar-start">
                 <a href="blog.html" class="btn font-extrabold ml-20 bg-Primary-Btn mt-10">Blog</a>
             </div>
@@ -170,6 +170,21 @@
                 </div>
             </div>
         </section>
+
+        <!-- History -->
+        <section>
+            <!-- Transaction start here  -->
+            <div id="trans-sec" class="hidden">
+                <div id="trans-con" class="text-center space-y-3 font-bold">
+                    <h1>Transaction</h1>
+                </div>
+            </div>
+            <!-- Transaction end here  -->
+        </section>
+
+        <script src="/js/features.js"></script>
+        <script src="js/utilities.js"></script>
+        <script src="js/trans.js"></script>
     </main>
 </body>
 
